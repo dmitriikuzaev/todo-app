@@ -1,0 +1,15 @@
+@import "./../../styles/variables";
+
+.tasks-filter {
+  margin-bottom: 24px;
+
+  &__sort {
+    color: #5f6470;
+    margin-left: 12px;
+    cursor: pointer;
+
+    &.active {
+      color: $blue;
+    }
+  }
+}

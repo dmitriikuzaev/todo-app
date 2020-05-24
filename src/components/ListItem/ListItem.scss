@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.task-list-item {
+  background-color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+
+  &--completed {
+    text-decoration: line-through;
+  }
+
+  &__title {
+    color: #5f6470;
+    font-size: 14px;
+    flex: 1;
+    padding: 12px;
+  }
+
+  &__important {
+    background: #edf0f5;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+
+    &.active {
+      background: $blue;
+    }
+  }
+
+  &__buttons-group {
+    margin-left: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 4px;
+    display: flex;
+  }
+
+  &__button {
+    margin-right: 8px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    color: #fff;
+  }
+}

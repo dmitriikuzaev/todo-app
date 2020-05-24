@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-left: 20px;
+  }
+
+  &__link {
+    color: #5f6470;
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 14px;
+
+    &.active {
+      color: $blue;
+    }
+  }
+}
+
+.search-panel {
+  &__control {
+    border: 1px solid #edf0f5;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    padding: 4px 12px;
+    color: #5f6470;
+  }
+}
+
+.user-panel {
+  &__avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    overflow: hidden;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
